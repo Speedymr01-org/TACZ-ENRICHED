@@ -1,6 +1,6 @@
 name: Version Update
-description: Update this plugin
-title: "Update to [version]"
+description: Request a modpack or mod update
+title: "Update [mod/modpack] to [version]"
 labels: ["Version Update"]
 assignees:
   - Speedymr01
@@ -9,14 +9,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please update this plugin to the specified version.
+        Please request a mod or modpack update below.
 
   - type: input
     id: version
     attributes:
       label: Version to update to
-      description: Enter the minecraft version you want this plugin updated to.
-      placeholder: ex. 26.1.2
+      description: Enter the version you want the mod/modpack updated to.
+      placeholder: ex. 1.2.3
     validations:
       required: true
 
@@ -24,9 +24,9 @@ body:
     id: reason
     attributes:
       label: Reason for Update
-      description: Why do you need this update? This helps us prioritize.
+      description: Why do you need this update? (e.g. bug fix, new feature, compatibility)
       placeholder: |
-        e.g., "Running a paper 1.21.4 server for my survival community" or "Need this for my competitive minigame network"
+        e.g., "Updating to fix a crash with another mod" or "Needed for new content"
     validations:
       required: true
 
